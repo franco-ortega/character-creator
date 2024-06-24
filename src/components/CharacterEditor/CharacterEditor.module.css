@@ -48,3 +48,32 @@
 	left: 0;
 	bottom: 0;
 }
+
+@media (max-width: 500px) {
+	.header {
+		width: 100%;
+		visibility: hidden;
+	}
+
+	.controlColumn {
+		position: relative;
+		width: 100%;
+
+		z-index: 2;
+
+		display: flex;
+		flex-direction: row;
+		gap: 16px;
+
+		overflow-x: scroll;
+	}
+
+	.characterWrapper {
+		max-height: 100%;
+		left: 0;
+	}
+
+	.perspectiveDecoration {
+		display: none;
+	}
+}
